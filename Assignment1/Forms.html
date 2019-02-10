@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Assignment 1 - Tables</title>
+</head>
+<body>
+	<h1> 
+		Hotel Reservation Form
+	</h1>
+	<form>
+	    <fieldset >
+		   <legend >Reservation Information</legend>
+
+		    <label>Number of Rooms (max 5 people per room)</label><input type="number"><br><br>
+		    <label>Smoker?</label>
+		    <input type="radio" value="Yes"><label>Yes</label>
+		    <input type="radio" value="No"><label>No</label><br><br>
+		    
+		    <label>Check-in: </label><input type="date" value="2019-01-01"> <br><br>
+		    <label>Check-out: </label><input type="date" value="2019-02-01">
+	    </fieldset>
+	    <br>
+		<fieldset >
+		    <legend >Room Specifications</legend>
+		    <ul>
+		    	<li><label>Number of single/double beds:</label>
+		    		<br>
+		    		<input type="checkbox">0/2
+		    		<input type="checkbox">2/0
+		    		<input type="checkbox">1/1
+		    		<input type="checkbox">2/2
+		    		<input type="checkbox">1/2
+		    	</li>
+		    </ul>
+		    <ul>
+		    	<li><label>Do you have preferred locations for the hotel?</label>
+		    		<br>
+		    		<input type="checkbox">Downtown
+		    		<input type="checkbox">Montreal East
+		    		<input type="checkbox">Montreal West
+		    		<input type="checkbox">Near the airport
+		    		<input type="checkbox">Oldport
+		    		<input type="checkbox">Don't care
+		    	</li>
+		    </ul>
+		    <ul>
+		    	<li><label>Price Range/ per night: </label>
+		    		<br>
+		    		<select>
+		    			<option>&lt;$50</option>
+		    			<option>&lt;$100</option>
+		    			<option>&lt;$200</option>
+		    			<option>&lt;$400</option>
+		    			<option>No price limit</option>
+		    		</select>
+		    	</li>
+		    </ul>
+		    <ul>
+		    	<li><label>Number of Private Parkings</label>
+		    		<br>
+		    		<input type="radio">0 <br>
+		    		<input type="radio">1 <br>
+		    		<input type="radio">2 <br>
+		    		<input type="radio">3 <br>
+		    		<input type="radio">4 <br>
+		    	</li>
+		    </ul>
+		    <ul>
+		    	<li><label>Special Facilities </label>
+		    		<br>
+		    		<input type="checkbox">Minibar
+		    		<input type="checkbox">Balcony
+		    		<input type="checkbox">Pool
+		    		<input type="checkbox">Water Front
+		    		<input type="checkbox">Garden Front
+		    		<input type="checkbox">Gym
+		    	</li>
+		    </ul>
+		</fieldset>	  
+		<br>
+		Let's see what we can find...
+		<br><br>
+		<input type="submit" value="Search">
+		<input type="reset" value="Start over">
+	</form>
+</body>
+</html>
