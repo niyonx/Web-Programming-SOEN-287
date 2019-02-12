@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <header><h1>Assignment 2 Question 2</h1></header>
+  <p>
+    <ul id="output">
+    </ul>
+  </p>
+
+  <script type="text/javascript">
+    var input;
+    var even = 0;
+    var odd = 0;
+    var number = 0;
+    do{
+      input = prompt("Please enter a number: ")
+      if(!isNaN(input) && input !="" && input >= 0){
+        number++;
+        if(input%2==0){
+          even++;
+        }else{
+          odd++;
+        }
+      }
+    }while(input != "")
+
+    var output = document.getElementById('output');
+    var li_node = document.createElement("li");
+    var textnode = document.createTextNode("You entered a total of "+number+" numbers");
+    li_node.appendChild(textnode);
+    output.appendChild(li_node);
+
+    var li_node2 = document.createElement("li");
+    var textnode2 = document.createTextNode("You entered "+odd+" odd numbers");
+    li_node2.appendChild(textnode2);
+    output.appendChild(li_node2);
+
+    var li_node3 = document.createElement("li");
+    var textnode3 = document.createTextNode("You entered "+even+" even numbers");
+    li_node3.appendChild(textnode3);
+    output.appendChild(li_node3);
+  </script>
+</body>
+</html>
