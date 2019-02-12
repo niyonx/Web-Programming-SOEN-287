@@ -1,0 +1,82 @@
+body{
+  background-image: url(https://pbs.twimg.com/profile_images/1002272769352978433/9S4QWSR0_400x400.jpg);
+}
+
+div{
+  color: orange;
+  width: 50%;
+  padding: 25px;
+  border: 25px solid orange;
+  background-color: rgb(253, 255, 106);
+  margin: 30px;
+}
+
+table{
+  border: 15px solid orangered;
+  margin: 30px;
+  border-style: dashed;
+  padding: 10px;
+}
+
+table tr:nth-child(1){
+  background-color: lightsalmon;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+table tr:nth-child(2) td:nth-child(1){
+  background-color: lightgoldenrodyellow;
+  border: 10px solid rgb(223, 223, 119);
+}
+
+table tr:nth-child(2) td:nth-child(1) ol{
+  list-style-type: upper-roman;
+}
+
+table tr:nth-child(2) td:nth-child(2){
+  background-color: lightblue;
+  border: 10px solid rgb(89, 169, 196);
+}
+
+table tr:nth-child(2) td:nth-child(2) ol {
+  list-style-type: upper-alpha;
+}
+
+ul.coloured {
+  color: rgb(89, 169, 196);
+}
+
+table ul.image > li{
+  list-style-image: url(https://www.officecleaning-london.org.uk/wp-content/uploads/2014/11/check-bullet.png);
+}
+
+table ul.image > li > ul > li{
+  list-style: square;
+}
+
+table tr:nth-child(3) td:nth-child(1){
+  background-color: lightgreen;
+  border: 10px solid rgb(97, 211, 97);
+}
+
+table tr:nth-child(3) td:nth-child(1) ol{
+  list-style-type: upper-roman;
+}
+
+table tr:nth-child(3) td:nth-child(2){
+  background-color: lightpink;
+  border: 10px solid rgb(207, 127, 139);
+}
+
+table tr:nth-child(3) td:nth-child(2) ol{
+  list-style-type: armenian;
+}
+
+table tr:nth-child(3) td:nth-child(2) ol > li > ul.coloured{
+  list-style-type: square;
+  color: rgb(207, 127, 139);
+}
+
+ul.smiley{
+  list-style-image: url(https://groups.tapatalk-cdn.com/smilies/52108/1534791777.663-smiley.png);
+}
