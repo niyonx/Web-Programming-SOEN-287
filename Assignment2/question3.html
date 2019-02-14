@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var input, body = document.body;
+      var table = document.createElement("table");
+      table.style.width = '50%';
+      table.setAttribute("border","1");
+      do{
+        input = prompt("Please enter a number.");
+        if(!isNaN(input) && input !=""){
+          var trNode = document.createElement("tr");
+          for(var i = 0; i <=input;i++){
+            var tdNode = document.createElement("td");
+            var textNode = document.createTextNode(i);
+            tdNode.appendChild(textNode);
+            trNode.appendChild(tdNode);
+            table.appendChild(trNode);
+          }
+          for(var i = 1; i <= input; i++){
+            var trNode = document.createElement("tr");
+            var tdNode = document.createElement("td");
+            var textNode = document.createTextNode(i);
+            tdNode.appendChild(textNode);
+            trNode.appendChild(tdNode);
+            for(var j = 1; j <= input; j++){
+              var tdNode = document.createElement("td");
+              var textNode = document.createTextNode(j * i);
+              tdNode.appendChild(textNode);
+              trNode.appendChild(tdNode);
+              table.appendChild(trNode);
+            }
+          }
+          break;
+        }
+      }while(input!="");
+      body.appendChild(table);
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
