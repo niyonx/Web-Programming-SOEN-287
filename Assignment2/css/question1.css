@@ -80,3 +80,8 @@ table tr:nth-child(3) td:nth-child(2) ol > li > ul.coloured{
 ul.smiley{
   list-style-image: url(https://groups.tapatalk-cdn.com/smilies/52108/1534791777.663-smiley.png);
 }
+
+p{
+  background-color: white;
+  padding: 0.1%
+}
