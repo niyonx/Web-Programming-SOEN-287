@@ -46,11 +46,11 @@ ul.coloured {
   color: rgb(89, 169, 196);
 }
 
-table ul.image > li{
-  list-style-image: url(https://www.officecleaning-london.org.uk/wp-content/uploads/2014/11/check-bullet.png);
+table ul.star > li{
+  list-style-image: url(https://66.media.tumblr.com/a109c7d6b606ae54c41ad09fb890531b/tumblr_inline_p8webq3MN31rg1lxe_75sq.png);
 }
 
-table ul.image > li > ul > li{
+table ul.star > li > ul > li{
   list-style: square;
 }
 
@@ -77,8 +77,8 @@ table tr:nth-child(3) td:nth-child(2) ol > li > ul.coloured{
   color: rgb(207, 127, 139);
 }
 
-ul.smiley{
-  list-style-image: url(https://groups.tapatalk-cdn.com/smilies/52108/1534791777.663-smiley.png);
+ul.crown{
+  list-style-image: url(https://66.media.tumblr.com/3f21bf6578f43c542399706123fcfe39/tumblr_inline_p8webrMq0q1rg1lxe_75sq.png);
 }
 
 p{
