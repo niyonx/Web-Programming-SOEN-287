@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Q4</title>
+</head>
+
+<body>
+  <div id="container">
+    <h2>Create Your Own flower Bouqute</h2>
+    <form action="" id="frm">
+      <fieldset>
+        <table border="0">
+          <tr>
+            <th>Item</th>
+            <th>Unit</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Red Roses</td>
+            <td><input type="text" size="3" id="rose" /></td>
+            <td>$5.5</td>
+          </tr>
+          <tr>
+            <td>Yellow Lily</td>
+            <td><input type="text" size="3" id="lily" /></td>
+            <td>$7.5</td>
+          </tr>
+          <tr>
+            <td>White Mini Calla</td>
+            <td><input type="text" size="3" id="scalla" /></td>
+            <td>$4.00</td>
+          </tr>
+          <tr>
+            <td>Pink Orchid</td>
+            <td><input type="text" size="3" id="orchid" /></td>
+            <td>$8.00</td>
+          </tr>
+          </tr>
+          <tr>
+            <td>Orange Daisy</td>
+            <td><input type="text" size="3" id="daisy" /></td>
+            <td>$7.00</td>
+          </tr>
+        </table>
+        <br /><br />
+        <label> Choose your delivery method </label> <br /><br />
+        <input type="radio" name="delivery" /> Standard ($2)
+        <input type="radio" name="delivery" /> Premium ($6)
+        <br /><br />
+        <input type="button" value="Place Order" id="sub" onclick="calculateTotal();" />
+      </fieldset>
+    </form>
+  </div>
+  <script type="text/javascript" src="Q4.js"></script>
+</body>
+
+</html>

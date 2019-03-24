@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="a3q2.js"></script>
+  <style>
+    .error{
+      color: red;
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Assignment 3 Question 2</h1>
+  <p>Enter a variable name starting with a lowercase letter followed by any number of letters (lower or uppercase), digits or the underscore character. The variable name should not have been previously been added.</p>
+  var <input type="text" onkeyup="validateVariable()" id="var"> <button onclick="addVariable()">Add</button>
+  <br><br>
+  <b>Variables</b>
+
+  <ul id="varList">
+
+  </ul>
+
+  <p id="debug">
+
+  </p>
+</body>
+</html>

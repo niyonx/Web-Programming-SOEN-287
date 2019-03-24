@@ -1,0 +1,7 @@
+function getElementAmpersandPipe(){
+
+}
+
+function convertAmpersandPipe(){
+  
+}

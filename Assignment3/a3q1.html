@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="a3q1.js"></script>
+</head>
+<body>
+  <h1>Assignment 3 Question 1</h1>
+  <form id="myForm">
+      Search in this text: <br>
+      <textarea rows="10" cols="80" name="searchText">John;Doe;jd2019@example.com
+Jane;Doe;jane@google.com;
+Bob;777;Bob%777@bob.com</textarea><br>
+      <table>
+        <tr>
+          <td>Split the text according to these characters: </td>
+          <td><input type="text" size="20" name="split" value=";"><br></td>
+        </tr>
+        <tr>
+          <td>Test each word with this regex: </td>
+          <td><input type="text" size="20" name="regex" value="\d"><br></td>
+        </tr>
+        <tr>
+            <td> Modify for the regex </td>
+            <td> <input type="text" size="5" name="mod" value="im"></td>
+        </tr>
+      </table>
+      <button type="button" value="Submit" onclick="search()">Search</button>
+      <button type="reset" value="Reset">Reset</button>
+      <p id="paragraph">
+      </p>
+  </form>
+</body>
+</html>
