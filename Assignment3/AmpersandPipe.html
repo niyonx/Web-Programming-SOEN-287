@@ -8,6 +8,11 @@
   <script src="AmpersandPipe.js"></script>
 </head>
 <body>
-  
+  <fieldset style="border-color:skyblue; display: inline;">
+      <b>Enter some text that includes at least one ampersand "&" and one pipe sign "|" then click outside the input box</b><br><br>
+      <input id="field" type="text" onblur="getElementAmpersandPipe()"><br><br>
+      <b>Result:</b><br><br>
+      <input type="text" id="output">
+  </fieldset>
 </body>
 </html>
