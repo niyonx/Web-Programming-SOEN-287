@@ -1,15 +1,18 @@
 function validateVariable(){
-  var textNode = document.createTextNode;
-  var variable = document.getElementById("var");
-  textNode = (String)(variable).search(/^[a-z]([a-z]|[A-Z]|_|[0-9])*$/gm);
-  document.getElementById("debug").appendChild(textNode);
+  var variable = document.getElementById("var").value;
   if(variable == "" || (String)(variable).search(/^[a-z]([a-z]|[A-Z]|_|[0-9])*$/gm) != -1){
-    variable.className = "";
+    document.getElementById("var").className = "";
   }else{
-    variable.className = "error";
+    document.getElementById("var").className = "error";
   }
 }
 
 function addVariable(){
-
+  var variable = document.getElementById("var").value;
+  var liNode = document.createElement("li");
+  var textNode = document.createTextNode(variable);
+  if(!document.getElementById("var").classList.contains("error") && !document.getElementById("varList").innerHTML.includes(variable)){
+    liNode.appendChild(textNode);
+    document.getElementById("varList").appendChild(liNode);
+  }
 }
