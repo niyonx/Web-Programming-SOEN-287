@@ -1,0 +1,14 @@
+body{
+  color: mediumblue;
+}
+
+#frm{
+  background-color: darkorange;
+  width: 540px;
+  border: 2px solid blue;
+  padding: 10px;
+}
+
+fieldset{
+  border: 0px;
+}
