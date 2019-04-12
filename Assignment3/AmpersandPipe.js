@@ -1,20 +1,15 @@
 var dom = document;
 
-function getElementAmpersandPipe(){
-  var text = dom.getElementById("field");
-
-  addEventListener("blur", convertAmpersandPipe(),false);
+function getElementAmpersandPipe() {
+  var text = dom.getElementById("field").value;
+  addEventListener("blur", convertAmpersandPipe(), false);
 }
 
-function convertAmpersandPipe(){
+function convertAmpersandPipe() {
   var text = dom.getElementById("field").value;
-  text = text.replace(/\&/g,"and");
-  text = text.replace(/\|/g,"or");
+  text = text.replace(/\&/g, "and");
+  text = text.replace(/\|/g, "or");
   dom.getElementById("output").value = text;
 }
 
-window.addEventListener("load", getElementAmpersandPipe(), false );
-
-// function convertAmpersandPipe(){
- 
-// }
+window.addEventListener("load", getElementAmpersandPipe(), false);

@@ -1,120 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Assignment 1 - Tables</title>
 	<style>
-		body{
+		body {
 			background-color: #e6faff;
 		}
-		.fieldset1{
+
+		.fieldset1 {
 			border-color: #00cc00;
 			background-color: #e6ffe6;
 		}
-		.legend1{
+
+		.legend1 {
 			color: #00cc00;
 			font-size: 1.2em;
 		}
-		.fieldset2{
+
+		.fieldset2 {
 			border-color: #ff6600;
 			background-color: #fff5e6;
 		}
-		.legend2{
+
+		.legend2 {
 			color: #ff6600;
 			font-size: 1.2em;
 		}
-		label{
+
+		label {
 			font-weight: bold;
 		}
-		.fieldset1 > label {
+
+		.fieldset1>label {
 			color: #22dd22;
 		}
-		.fieldset2 > ul > li > label {
+
+		.fieldset2>ul>li>label {
 			color: #ffaa22;
 		}
 	</style>
 </head>
+
 <body>
 	<table>
 		<tr>
-			<td><a href="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2716892/580/386/m1/fpnw/wm0/hotel-letter-h-logo-01-.jpg?1495237683&s=cb7978976e00241af78cc3e593bae174"><img src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2716892/580/386/m1/fpnw/wm0/hotel-letter-h-logo-01-.jpg?1495237683&s=cb7978976e00241af78cc3e593bae174" alt="Hotel Logo" width="100" height="100"></a></td>
-			<td><h1>Hotel Reservation Form</h1></td>
+			<td><a
+					href="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2716892/580/386/m1/fpnw/wm0/hotel-letter-h-logo-01-.jpg?1495237683&s=cb7978976e00241af78cc3e593bae174"><img
+						src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2716892/580/386/m1/fpnw/wm0/hotel-letter-h-logo-01-.jpg?1495237683&s=cb7978976e00241af78cc3e593bae174"
+						alt="Hotel Logo" width="100" height="100"></a></td>
+			<td>
+				<h1>Hotel Reservation Form</h1>
+			</td>
 		</tr>
 	</table>
 	<form>
-	    <fieldset class="fieldset1">
-		   <legend class="legend1">Reservation Information</legend>
+		<fieldset class="fieldset1">
+			<legend class="legend1">Reservation Information</legend>
 
-		    <label>Number of Rooms (max 5 people per room)</label><input type="number"><br><br>
-		    <label>Smoker?</label>
-		    <input type="radio" value="Yes"><label>Yes</label>
-		    <input type="radio" value="No"><label>No</label><br><br>
-		    
-		    <label>Check-in: </label><input type="date" value="2019-01-01"> <br><br>
-		    <label>Check-out: </label><input type="date" value="2019-02-01">
-	    </fieldset>
-	    <br>
+			<label>Number of Rooms (max 5 people per room)</label><input type="number"><br><br>
+			<label>Smoker?</label>
+			<input type="radio" value="Yes"><label>Yes</label>
+			<input type="radio" value="No"><label>No</label><br><br>
+
+			<label>Check-in: </label><input type="date" value="2019-01-01"> <br><br>
+			<label>Check-out: </label><input type="date" value="2019-02-01">
+		</fieldset>
+		<br>
 		<fieldset class="fieldset2">
-		    <legend class="legend2">Room Specifications</legend>
-		    <ul>
-		    	<li><label>Number of single/double beds:</label>
-		    		<br>
-		    		<input type="checkbox">0/2
-		    		<input type="checkbox">2/0
-		    		<input type="checkbox">1/1
-		    		<input type="checkbox">2/2
-		    		<input type="checkbox">1/2
-		    	</li>
-		    </ul>
-		    <ul>
-		    	<li><label>Do you have preferred locations for the hotel?</label>
-		    		<br>
-		    		<input type="checkbox">Downtown
-		    		<input type="checkbox">Montreal East
-		    		<input type="checkbox">Montreal West
-		    		<input type="checkbox">Near the airport
-		    		<input type="checkbox">Oldport
-		    		<input type="checkbox">Don't care
-		    	</li>
-		    </ul>
-		    <ul>
-		    	<li><label>Price Range/ per night: </label>
-		    		<br>
-		    		<select>
-		    			<option>&lt;$50</option>
-		    			<option>&lt;$100</option>
-		    			<option>&lt;$200</option>
-		    			<option>&lt;$400</option>
-		    			<option>No price limit</option>
-		    		</select>
-		    	</li>
-		    </ul>
-		    <ul>
-		    	<li><label>Number of Private Parkings</label>
-		    		<br>
-		    		<input type="radio">0 <br>
-		    		<input type="radio">1 <br>
-		    		<input type="radio">2 <br>
-		    		<input type="radio">3 <br>
-		    		<input type="radio">4 <br>
-		    	</li>
-		    </ul>
-		    <ul>
-		    	<li><label>Special Facilities </label>
-		    		<br>
-		    		<input type="checkbox">Minibar
-		    		<input type="checkbox">Balcony
-		    		<input type="checkbox">Pool
-		    		<input type="checkbox">Water Front
-		    		<input type="checkbox">Garden Front
-		    		<input type="checkbox">Gym
-		    	</li>
-		    </ul>
-		</fieldset>	  
+			<legend class="legend2">Room Specifications</legend>
+			<ul>
+				<li><label>Number of single/double beds:</label>
+					<br>
+					<input type="checkbox">0/2
+					<input type="checkbox">2/0
+					<input type="checkbox">1/1
+					<input type="checkbox">2/2
+					<input type="checkbox">1/2
+				</li>
+			</ul>
+			<ul>
+				<li><label>Do you have preferred locations for the hotel?</label>
+					<br>
+					<input type="checkbox" id="downtown">Downtown
+					<input type="checkbox">Montreal East
+					<input type="checkbox">Montreal West
+					<input type="checkbox">Near the airport
+					<input type="checkbox">Oldport
+					<input type="checkbox">Don't care
+				</li>
+			</ul>
+			<ul>
+				<li><label>Price Range/ per night: </label>
+					<br>
+					<select id="price">
+						<option value="1">$50 to $100</option>
+						<option value="2">100$ to $200</option>
+						<option value="3">200$ to $400</option>
+						<option value="4">No price limit</option>
+					</select>
+				</li>
+			</ul>
+			<ul>
+				<li><label>Number of Private Parkings</label>
+					<br>
+					<input type="radio">0 <br>
+					<input type="radio">1 <br>
+					<input type="radio">2 <br>
+					<input type="radio">3 <br>
+					<input type="radio">4 <br>
+				</li>
+			</ul>
+			<ul>
+				<li><label>Special Facilities </label>
+					<br>
+					<input type="checkbox">Minibar
+					<input type="checkbox">Balcony
+					<input type="checkbox">Pool
+					<input type="checkbox">Water Front
+					<input type="checkbox">Garden Front
+					<input type="checkbox">Gym
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset id="expert" class="fieldset1" style="display:none;">
+			<legend class="legend2">Expert Suggestion</legend>
+			<p id="expertText">
+
+			</p>
+		</fieldset>
 		<br>
 		Let's see what we can find...
 		<br><br>
-		<input type="submit" value="Search">
+		<input type="button" onclick="showExpert()" value="Search">
 		<input type="reset" value="Start over">
 	</form>
+	<script>
+		function showExpert() {
+			var price = document.getElementById("price").value;
+			var downtown = document.getElementById("downtown").checked;
+
+			if (price == 1 && downtown == true) {
+				document.getElementById("expertText").innerHTML = "It is very difficult to find a hotel room in this price range at Downtown"
+				document.getElementById("expert").style.display = "block";
+			}else{
+				document.getElementById("expert").style.display = "none";
+			}
+		}
+	</script>
 </body>
+
 </html>

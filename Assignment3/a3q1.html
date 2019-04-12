@@ -11,21 +11,22 @@
   <h1>Assignment 3 Question 1</h1>
   <form id="myForm">
       Search in this text: <br>
-      <textarea rows="10" cols="80" name="searchText">John;Doe;jd2019@example.com
-Jane;Doe;jane@google.com;
-Bob;777;Bob%777@bob.com</textarea><br>
+      <!-- John;Doe;jd2019@example.com
+      Jane;Doe;jane@google.com;
+      Bob;777;Bob%777@bob.com -->
+      <textarea rows="10" cols="80" name="searchText"></textarea><br>
       <table>
         <tr>
           <td>Split the text according to these characters: </td>
-          <td><input type="text" size="20" name="split" value=";"><br></td>
+          <td><input type="text" size="20" name="split"><br></td>
         </tr>
         <tr>
           <td>Test each word with this regex: </td>
-          <td><input type="text" size="20" name="regex" value="\d"><br></td>
+          <td><input type="text" size="20" name="regex"><br></td>
         </tr>
         <tr>
             <td> Modify for the regex </td>
-            <td> <input type="text" size="5" name="mod" value="im"></td>
+            <td> <input type="text" size="5" name="mod"></td>
         </tr>
       </table>
       <button type="button" value="Submit" onclick="search()">Search</button>
