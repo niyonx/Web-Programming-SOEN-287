@@ -24,7 +24,7 @@ if (isset($_POST['name']) && isset($_POST['tel']) && !empty($_POST['name']) && !
 // name ^[A-Z][a-z]+$
 
 if (!isset($_POST["name"]) or empty($_POST["name"]) or
-!isset($_POST["tel"]) or empty($_POST["tel"])) {
+    !isset($_POST["tel"]) or empty($_POST["tel"])) {
     echo "<p>Missing Last name and/or telephone number</p>";
 } else{
     if (preg_match("/^[A-Z][a-z]+$/", $name)) {
