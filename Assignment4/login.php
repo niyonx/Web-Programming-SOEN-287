@@ -43,7 +43,7 @@ function newAccount($string){
                     if (loginContains($_POST['username'])){
                         if (loginContains($_POST['username'].":".$_POST['password'])){
                             $_SESSION['username'] = $_POST['username'];
-                            echo "<meta http-equiv='refresh' content='0;url=header.php'>";
+                            echo "<meta http-equiv='refresh' content='0;url=success.php'>";
                         }else{
                             echo "Invalid login. Please try again.";
                         }
