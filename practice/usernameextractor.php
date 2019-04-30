@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h2>Welcome to string formatter</h2>
+  <h2>Welcome to username extractor</h2>
   <form method="post">
     <label>Input your email address: <input type="email" name="email"></label><br><br>
     <input type="submit">
@@ -16,7 +16,8 @@
     <?php
       if(isset($_POST['email']) && !empty($_POST['email'])){
         print "The email is: ".$_POST['email']."<br>";
-        print "Your username is: ".substr($_POST['email'],0,strpos($_POST['email'],"@"));
+        print "Your username is: ".substr($_POST['email'],0,strpos($_POST['email'],"@"))."<br>";
+        print "Long username in email: ".substr($_POST['email'],0,3)."...".substr($_POST['email'],strpos($_POST['email'],"@"));
       }
     ?>
   </p>
